@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CoffeShop</string>
+    <string name="title_activity_radial_progress_indicator">Mocha</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="analyzer_toggle_show_modern">Show Modern Visualizer</string>
+    <string name="analyzer_toggle_show_classic">Show Classic Visualizer</string>
+    <string name="audio_visualizer">Audio Visualizer</string>
+    <string name="progress_indicator">Radial Progress Indicator</string>
 </resources>

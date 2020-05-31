@@ -11,6 +11,11 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.channels.consumeEach
 import kotlin.system.measureTimeMillis
 
+/**
+ * [medium post](https://proandroiddev.com/kotlin-coroutines-channels-csp-android-db441400965f}
+ * [youtube link](https://www.youtube.com/watch?v=3WGM-_MnPQA)
+ *
+ */
 class CoffeeActivityWithCoroutine_2 : AppCompatActivity() {
 
     private val barista = Barista2()
