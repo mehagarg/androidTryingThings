@@ -10,8 +10,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/advancedkotlinhadihaririplayground" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/coffeshop" />
+            <option value="$PROJECT_DIR$/materialshapes" />
             <option value="$PROJECT_DIR$/stateflowexamples" />
           </set>
         </option>

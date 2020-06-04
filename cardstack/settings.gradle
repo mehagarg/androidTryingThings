@@ -1,3 +1,5 @@
+include ':advancedkotlinhadihaririplayground'
+include ':materialshapes'
 include ':stateflowexamples'
 include ':coffeshop'
 include ':app'
