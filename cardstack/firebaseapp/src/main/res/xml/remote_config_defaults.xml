@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DefaultsMap xmlns:android="http://schemas.android.com/apk/res/android">
 
+  <entry>
+    <key>should_show_chat</key>
+    <value>true</value>
+  </entry>
 </DefaultsMap>

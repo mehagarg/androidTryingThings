@@ -1,0 +1,44 @@
+ext {
+
+    // Android
+    androidBuildToolsVersion = "29.0.3"
+    androidMinSdkVersion = 23
+    androidTargetSdkVersion = 28
+    androidCompileSdkVersion = 28
+    kotlinVersion = "1.3.72"
+
+
+    // Libraries
+    supportLibraryVersion = '26.0.1'
+    rxAndroid2 = '2.2.9'
+    annotationVersion = '1.1.0'
+    javaxInjectVersion = '1'
+    kotlinxCoroutines = "1.3.7"
+
+
+    // Testing
+    junitVersion = '4.12'
+    mockitoCore = '2.24.0'
+    mockitoKotlin = '2.1.0'
+    assertjAndroid = '1.1.1'
+    assertjCore = '3.8.0'
+
+
+    domainDependencies = [
+            annotation    : "androidx.annotation:annotation:${annotationVersion}",
+            javaxInject   : "javax.inject:javax.inject:${javaxInjectVersion}",
+            rxJava        : "io.reactivex.rxjava2:rxandroid:${rxAndroid2}",
+            coroutinesCore: "org.jetbrains.kotlinx:kotlinx-coroutines-core:${kotlinxCoroutines}",
+            coroutinesRX2 : "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:${kotlinxCoroutines}",
+            coroutinesTest: "org.jetbrains.kotlinx:kotlinx-coroutines-test:${kotlinxCoroutines}"
+    ]
+
+    domainTestDependencies = [
+            junit         : "junit:junit:${junitVersion}",
+            mockitoAndroid: "org.mockito:mockito-android:$mockitoCore",
+            mockitoCore   : "org.mockito:mockito-core:${mockitoCore}",
+            mockitoKotlin : "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlin",
+            assertJAndroid: "com.squareup.assertj:assertj-android:1.2.0",
+            assertJCore   : "org.assertj:assertj-core:$assertjCore"
+    ]
+}

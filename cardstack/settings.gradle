@@ -1,4 +1,10 @@
+include ':firebaseapp'
 include ':tinderlikeswipe'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+  settingsDir,
+  '../first_flutter_app/.android/include_flutter.groovy'
+))
 include ':recyclerviewunderstanding'
 include ':advancedkotlinhadihaririplayground'
 include ':materialshapes'
@@ -6,3 +12,9 @@ include ':stateflowexamples'
 include ':coffeshop'
 include ':app'
 rootProject.name = "TinderLikeCardStack"
+
+include ':first_flutter_app'
+project(':first_flutter_app').projectDir = new File('../first_flutter_app')
+
+include ':first_flutter_app'
+project(':first_flutter_app').projectDir = new File('../first_flutter_app')

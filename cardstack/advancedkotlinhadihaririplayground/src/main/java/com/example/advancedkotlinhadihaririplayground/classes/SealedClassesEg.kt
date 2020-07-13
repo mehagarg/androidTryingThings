@@ -5,20 +5,34 @@ class SealedClassesEg {
 }
 
 
-class PageResult(val result: String, var isError: Boolean){
-
+sealed class PageResult {
+    class Success(val content: String) : PageResult()
+    class Error(val code: Int, val message: String) : PageResult()
 }
+class Success(val content: String) : PageResult()
+class Error(val code: Int, val message: String) : PageResult()
 
 fun getURLPage(url: String): PageResult {
     val wasValidCall = false
     if(wasValidCall) {
-        return PageResult("The content", false)
+        return PageResult.Success("The content")
     } else {
-        return PageResult("ERROR", true)
+        return PageResult.Error(123, "Error")
     }
 }
 
 fun main(){
+    /***
+     * The caller of the fun will have to do something like below
+     *
+     * Single class PageResult representing two distinct values. It is kind of confusiong.
+     * Why not PageResult return an algebric data type, return a type ie. for valid result and
+     * for error instead of sharing these things.
+     */
+    val pageResult = getURLPage("/")
+//    if(pageResult.isError){
+//
+//    }
 
 }
 
